@@ -1,0 +1,19 @@
+program Fibonacci;
+var
+  n, i, a, b, temp: integer;
+begin
+  write('Enter sequence length: ');
+  readln(n);
+  
+  a := 0;
+  b := 1;
+  write('Fibonacci: ', a, ' ', b, ' ');
+  
+  for i := 3 to n do
+  begin
+    temp := a + b;
+    write(temp, ' ');
+    a := b;
+    b := temp;
+  end;
+end.
