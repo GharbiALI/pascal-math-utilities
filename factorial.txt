@@ -1,0 +1,16 @@
+program Factorial;
+var
+  n, i: integer;
+  fact: longint;
+begin
+  write('Enter a number (1-10): ');
+  readln(n);
+  
+  fact := 1;
+  for i := 1 to n do
+  begin
+    fact := fact * i;
+  end;
+  
+  writeln(n, '! = ', fact);
+end.
