@@ -1,15 +1,15 @@
 program Fibonacci;
 var
-  n, i, a, b, temp: integer;
+  number, i, a, b, temp: integer;
 begin
   write('Enter sequence length: ');
-  readln(n);
+  readln(number);
   
   a := 0;
   b := 1;
   write('Fibonacci: ', a, ' ', b, ' ');
   
-  for i := 3 to n do
+  for i := 3 to number do
   begin
     temp := a + b;
     write(temp, ' ');
